@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body{
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+#calc{
+  width: 400px;
+  padding: .5rem;
+  background: #c4c4c4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+#calc h3 {
+  font-size:  .8rem;
+  font-weight: 300;
+  color: #666;
+}
+#operacao{
+  text-align: right;
+  padding: 30px 0;
+}
+#previuw-operacao, #operacao-atual{
+  overflow-wrap: break-word;
+  min-height: 1.6rem;
+  padding: .2rem;
+}
+#previuw-operacao{
+  color: #777;
+}
+#operacao-atual{
+  font-size: 3rem;
+  font-weight: 700;
+}
+#botao-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+#botao-container button{
+  border: 1px solid transparent;
+  border: 0;
+  height: 4rem;
+  font-size: 1.2rem ;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  transition: 1s all;
+}
+#botao-container button:hover{
+  background-color: #bababa;
+  border-color: #999;
+}
+#botao-container .numero{
+  background-color: #f3f3f3;
+}
+
+#botao-container #igual{
+  grid-column: span 2;
+  background-color: #75a5cb;
+  transition: 1s all;
+}
+#botao-container #igual:hover{
+  background-color: #3a91d8;
+}
